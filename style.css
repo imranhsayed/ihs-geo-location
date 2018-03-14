@@ -1,0 +1,55 @@
+/**
+ * IHS Geo Location Styles
+ */
+.ihs-loading {
+	background: gray;
+	border-radius: 2px;
+	margin: -5px 0 0 -21px;
+	position: absolute;
+	top: 50%; left: 50%;
+	z-index: 9999;
+	width: 11px; height: 11px;
+	-webkit-animation: pulse2 0.5s infinite ease-in;
+}
+
+.ihs-loading:before {
+	background: gray;
+	border-radius: 2px;
+	content: '';
+	position: absolute;
+	top: 0; left: -16px;
+	width: 11px; height: 11px;
+	-webkit-animation: pulse1 0.5s infinite ease-in;
+}
+
+.ihs-loading:after {
+	background: gray;
+	border-radius: 2px;
+	content: '';
+	position: absolute;
+	top: 0; right: -16px;
+	width: 11px; height: 11px;
+	-webkit-animation: pulse3 0.5s infinite ease-in;
+}
+
+@-webkit-keyframes pulse1 {
+	0% {background-color: gray;}
+	25% {background-color: black;}
+	50% {background-color: gray;}
+	100% {background-color: gray;}
+}
+
+@-webkit-keyframes pulse2 {
+	0% {background-color: gray;}
+	50% {background-color: black;}
+	100% {background-color: gray;}
+}
+
+@-webkit-keyframes pulse3 {
+	0% {background-color: gray;}
+	50% {background-color: gray;}
+	100% {background-color: black;}
+}
+.ihs-geo-hide {
+	display: none;
+}
